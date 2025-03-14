@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  text-align: center;
-  max-width: 450px;
+  max-width: 100%;
   font-size: 1.2rem;
   font-family: "Open Sans";
   line-height: 1.65;
@@ -18,18 +17,24 @@ header {
   color: #393d41;
 }
 header nav {
+  height: 50px;
   width: inherit;
 }
 header nav img {
-  padding: 30px;
-  width: 35%;
+  text-align: start;
+  padding: 10px;
+  padding-left: 20px;
+  width: 75px;
 }
 header div {
+  height: 550px;
   background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position-y: top;
   background-position-x: center;
   padding: 30px;
+  text-align: center;
+  align-content: center;
 }
 header div h1 {
   padding-top: 20px;
@@ -38,6 +43,7 @@ header div h1 {
   font-size: xx-large;
   color: #25a2c3;
   font-family: "Montserrat";
+  vertical-align: middle;
 }
 header div p {
   padding-top: 20px;
@@ -59,13 +65,37 @@ header div button {
   cursor: pointer;
 }
 /* MAIN */
-
-.standard {
-  max-width: 410px;
-  padding: 20px;
+.container {
+  display: inline-block;
   text-align: center;
-  padding-bottom: 10px;
+
+  margin-left: 200px;
+  margin-right: 200px;
 }
+.container2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: left;
+  vertical-align: top;
+  padding-top: 100px;
+}
+.container3 {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border: 0;
+}
+.standard {
+  display: inline-block;
+  max-width: 100%;
+  padding: 20px;
+  text-align: left;
+  padding-bottom: 10px;
+  vertical-align: top;
+  margin: 0;
+}
+
 .standard h3 {
   color: #25a2c3;
   font-family: "Montserrat";
@@ -73,11 +103,15 @@ header div button {
   line-height: 1.5;
 }
 .rotonda {
-  text-align: center;
+  width: 45%;
+  display: inline-block;
+  text-align: right;
+  padding-right: 30px;
 }
-.notebook {
-  max-width: 450px;
-  width: 60%;
+
+.rotonda img {
+  max-width: 100%;
+  width: 500px;
   border-radius: 50%;
   padding-top: 10px;
 }
@@ -87,6 +121,7 @@ section {
   padding: 20px;
   margin-bottom: 50px;
   margin-top: 50px;
+  text-align: center;
 }
 section h2 {
   padding: 20px;
@@ -109,16 +144,19 @@ section h6 {
   font-size: small;
   padding-bottom: 15px;
 }
-
+aside {
+  text-align: center;
+}
 aside div {
-  margin: 30px;
+  margin: 15px;
   border: solid #dee1e3 1px;
   border-radius: 5px;
+  width: 450px;
+  display: inline-block;
 }
 
 aside div img {
-  max-width: 450px;
-  width: 100%;
+  width: 450px;
 }
 aside div h3 {
   color: #25a2c3;
@@ -135,6 +173,7 @@ footer {
   margin-top: 50px;
   background-color: #25a2c3;
   color: #c8e7f0;
+  text-align: center;
 }
 footer h1 {
   color: white;
@@ -154,8 +193,8 @@ footer {
 hr {
   margin: 0;
   margin-top: 30px;
-  margin-right: 115px;
-  margin-left: 115px;
+  margin-right: 800px;
+  margin-left: 800px;
 }
 footer div {
   padding-top: 30px;
